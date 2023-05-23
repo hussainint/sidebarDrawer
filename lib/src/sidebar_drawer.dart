@@ -5,8 +5,8 @@ import 'Responsive/responsive.dart';
 import 'State/drawerController.dart';
 
 class SidebarDrawer extends StatelessWidget {
-  Widget body;
-  Widget drawer;
+  final Widget body;
+  final Widget drawer;
   SidebarDrawer({
     required this.body,
     required this.drawer,
@@ -29,7 +29,7 @@ class SidebarDrawer extends StatelessWidget {
           return Row(
             children: [
               if (model.getDrawerStatus)
-                Container(
+                SizedBox(
                   width: 300,
                   child: drawer,
                 ),
@@ -41,27 +41,25 @@ class SidebarDrawer extends StatelessWidget {
             children: [
               body,
               if (model.getDrawerStatus && !model.isLayoutWeb)
-                Container(
-                  child: Row(
-                    children: [
-                      Container(
-                        width: MediaQuery.of(context).size.width * 0.65 > 300
-                            ? 300
-                            : MediaQuery.of(context).size.width * 0.65,
-                        child: drawer,
-                      ),
-                      Expanded(
-                        child: GestureDetector(
-                          onTap: () {
-                            model.setDrawerStatus();
-                          },
-                          child: Container(
-                            color: Colors.black12.withOpacity(0.2),
-                          ),
+                Row(
+                  children: [
+                    SizedBox(
+                      width: MediaQuery.of(context).size.width * 0.65 > 300
+                          ? 300
+                          : MediaQuery.of(context).size.width * 0.65,
+                      child: drawer,
+                    ),
+                    Expanded(
+                      child: GestureDetector(
+                        onTap: () {
+                          model.setDrawerStatus();
+                        },
+                        child: Container(
+                          color: Colors.black12.withOpacity(0.2),
                         ),
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
             ],
           );
