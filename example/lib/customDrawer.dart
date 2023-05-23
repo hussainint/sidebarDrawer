@@ -37,41 +37,47 @@ class CustomDrawer extends StatelessWidget {
           ),
 
           DrawerTile(
-            title: 'My Actions',
+            title: 'Option 1',
             icn: Icons.safety_check,
             subOptions: [
-              DrawerTile(
-                title: 'My Work Order',
-                icn: Icons.safety_check,
-                // route: WorkOrderView.routeName,
-              ),
-              DrawerTile(title: 'My Assigned Tickets', icn: Icons.safety_check),
-              DrawerTile(
-                  title: 'My Pending Approvals', icn: Icons.safety_check),
-              DrawerTile(title: 'My Store Tasks', icn: Icons.safety_check),
+              DrawerTile(title: 'Sub Option 1', icn: Icons.safety_check),
+              DrawerTile(title: 'Sub Option 2', icn: Icons.safety_check),
+              DrawerTile(title: 'Sub Option 3', icn: Icons.safety_check),
             ],
           ),
 
           ///
-          DrawerTile(title: 'My requests & Approvals', icn: Icons.safety_check),
+          DrawerTile(
+            title: 'Option 2',
+            icn: Icons.safety_check,
+            subOptions: [
+              DrawerTile(title: 'Sub Option 1', icn: Icons.safety_check),
+              DrawerTile(title: 'Sub Option 2', icn: Icons.safety_check),
+              DrawerTile(title: 'Sub Option 3', icn: Icons.safety_check),
+            ],
+          ),
 
           ///
-          DrawerTile(title: 'Attendance', icn: Icons.safety_check, subOptions: [
-            DrawerTile(title: 'My Attendance', icn: Icons.safety_check),
-            DrawerTile(title: 'My Schedule', icn: Icons.safety_check),
-          ]),
+          DrawerTile(
+            title: 'Option 3',
+            icn: Icons.safety_check,
+            subOptions: [
+              DrawerTile(title: 'Sub Option 1', icn: Icons.safety_check),
+              DrawerTile(title: 'Sub Option 2', icn: Icons.safety_check),
+              DrawerTile(title: 'Sub Option 3', icn: Icons.safety_check),
+            ],
+          ),
 
           ///
-          DrawerTile(title: 'Teams', icn: Icons.safety_check, subOptions: [
-            DrawerTile(title: 'My Teams', icn: Icons.safety_check),
-            DrawerTile(title: 'Teams Attendance', icn: Icons.safety_check),
-          ]),
-
-          ///
-          DrawerTile(title: 'Reports', icn: Icons.safety_check, subOptions: [
-            DrawerTile(title: 'My Reports', icn: Icons.safety_check),
-            DrawerTile(title: 'My Store Stocks', icn: Icons.safety_check),
-          ]),
+          DrawerTile(
+            title: 'Option 4',
+            icn: Icons.safety_check,
+            subOptions: [
+              DrawerTile(title: 'Sub Option 1', icn: Icons.safety_check),
+              DrawerTile(title: 'Sub Option 2', icn: Icons.safety_check),
+              DrawerTile(title: 'Sub Option 3', icn: Icons.safety_check),
+            ],
+          ),
         ],
       ),
     );

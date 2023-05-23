@@ -6,7 +6,7 @@ A custom drawer for web and mobile which adapts itseld based on the the screen s
 
 ## Demo
 
-![App Screenshot](https://github.com/hussainint/DataFilters/assets/48062618/5ff0dcb1-2e9a-4d5e-9cb4-a1a93a131162)
+![Video](./demo.gif)
 
 
 ## Features

@@ -22,6 +22,10 @@ class SidebarDrawer extends StatelessWidget {
       child: Consumer<DrawerControllerStateCustom>(
           builder: (context, model, child) {
         if (Responsive.isDesktop(context)) {
+          ///
+          model.setLayoutAsWeb(true);
+
+          ///
           return Row(
             children: [
               if (model.getDrawerStatus)
@@ -36,7 +40,7 @@ class SidebarDrawer extends StatelessWidget {
           return Stack(
             children: [
               body,
-              if (model.getDrawerStatus)
+              if (model.getDrawerStatus && !model.isLayoutWeb)
                 Container(
                   child: Row(
                     children: [
@@ -49,7 +53,7 @@ class SidebarDrawer extends StatelessWidget {
                       Expanded(
                         child: GestureDetector(
                           onTap: () {
-                            drawerController(context);
+                            model.setDrawerStatus();
                           },
                           child: Container(
                             color: Colors.black12.withOpacity(0.2),
@@ -76,6 +80,10 @@ class DrawerIcon extends StatelessWidget {
       onPressed: () {
         Provider.of<DrawerControllerStateCustom>(context, listen: false)
             .setDrawerStatus();
+
+        ///
+        Provider.of<DrawerControllerStateCustom>(context, listen: false)
+            .setLayoutAsWeb(Responsive.isDesktop(context));
       },
       icon: const Icon(Icons.menu),
     );

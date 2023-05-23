@@ -53,6 +53,7 @@ class MainBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print('main body rebuild');
     return const Center(
       child: Text(
         'This is a page',
