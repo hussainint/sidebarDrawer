@@ -1,16 +1,53 @@
-# sidebar_drawer
 
-A new Flutter project.
+# Responsive Sidebar/Drawer for Web & Mobile
 
-## Getting Started
+A custom drawer for web and mobile which adapts itseld based on the the screen size.
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Demo
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![App Screenshot](https://github.com/hussainint/DataFilters/assets/48062618/5ff0dcb1-2e9a-4d5e-9cb4-a1a93a131162)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+## Features
+
+- Sidebar when layout is web
+- Cloappsable when screen layout is reduced
+- Overlay drawer when screen is mobile
+
+
+## Usage/Examples
+
+Wrap your body with SidebarDrawer()
+
+This widget contains `drawer` `body`
+
+Pass custom drawer widget to the `drawer` property.
+
+`body` will display the contents in the main page
+
+Use `DrawerIcon`  to display a menu icon which will on clicking will close / open the drawer
+```dart
+Scaffold(
+      body: SidebarDrawer(
+        drawer: CustomDrawer(),
+        body: Column(
+          children: [
+            AppBar(
+              leading: DrawerIcon(),
+            ),
+            MainBody(),
+          ],
+        ),
+      ),
+```
+
+
+## More Packages
+
+Here are some more packages 
+
+[Custom Filters](https://pub.dev/packages/data_filters)
+
+[Offline Store Upload](https://pub.dev/packages/offline_store_upload)
+

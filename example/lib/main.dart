@@ -29,7 +29,6 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print('rebuild main.dart');
     return Scaffold(
       //  body: Bodyy(),
       body: SidebarDrawer(

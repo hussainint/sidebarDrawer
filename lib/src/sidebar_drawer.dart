@@ -41,7 +41,7 @@ class SidebarDrawer extends StatelessWidget {
                   child: Row(
                     children: [
                       Container(
-                        width: MediaQuery.of(context).size.width * 0.65 > 500
+                        width: MediaQuery.of(context).size.width * 0.65 > 300
                             ? 300
                             : MediaQuery.of(context).size.width * 0.65,
                         child: drawer,
