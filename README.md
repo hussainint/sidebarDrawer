@@ -7,7 +7,7 @@ A custom drawer for web and mobile which adapts itseld based on the the screen s
 ## Demo
 
 ![Video](./demo.gif)
-![Video2](https://github.com/hussainint/sidebarDrawer/demo.gif)
+![Video2](https://github.com/hussainint/sidebarDrawer/blob/main/demo.gif?raw=true)
 
 
 
