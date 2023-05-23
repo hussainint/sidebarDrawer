@@ -17,8 +17,6 @@ class SidebarDrawer extends StatelessWidget {
     //     Provider.of<DrawerControllerStateCustom>(context, listen: true)
     //         .getDrawerStatus;
 
-    print('rebuild sidebardrawer.dart');
-
     return ChangeNotifierProvider(
       create: (context) => DrawerControllerStateCustom(),
       child: Consumer<DrawerControllerStateCustom>(

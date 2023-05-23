@@ -5,12 +5,10 @@ class DrawerControllerStateCustom with ChangeNotifier {
   bool isOpen = true;
 
   bool get getDrawerStatus {
-    print('getting statua');
     return isOpen;
   }
 
   void setDrawerStatus() {
-    print('changes in state');
     isOpen = !isOpen;
     notifyListeners();
   }
