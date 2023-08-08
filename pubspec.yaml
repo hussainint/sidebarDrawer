@@ -1,6 +1,6 @@
 name: sidebar_drawer
 description: A custom drawer for web and mobile which adapts itseld based on the the screen size.
-version: 0.0.1+1
+version: 0.0.1+2
 homepage: https://github.com/hussainint/sidebarDrawer
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.

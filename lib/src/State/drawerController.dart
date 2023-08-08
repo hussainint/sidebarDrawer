@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
 class DrawerControllerStateCustom with ChangeNotifier {
-  bool isOpen = true;
-  bool isLayoutWeb = true;
+  bool isOpen = false;
+  bool isLayoutWeb = false;
 
   bool get getDrawerStatus {
     return isOpen;
